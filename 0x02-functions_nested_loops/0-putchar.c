@@ -1,11 +1,10 @@
 #include "main.h"
 
-/*
- * main - program that prints _putchar
- *
- * return - always 0
- */
-
+/**
+  * main - program that prints _putchar
+  *
+  * return - always 0
+  */
 int main(void)
 {
 	int n = 0;
@@ -16,6 +15,7 @@ int main(void)
 		_putchar(str_hbt[n]);
 		n += 1;
 	}
-	_putchar('\n');	
+	_putchar('\n');
+
 	return (0);
 }
