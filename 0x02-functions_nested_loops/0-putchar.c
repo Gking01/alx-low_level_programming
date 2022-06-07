@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * main - program that prints _putchar
-  *
-  * return - always 0
-  */
+* Main - Program that prints _putchar
+*
+* Return - Always 0
+*/
 int main(void)
 {
 	int n = 0;
