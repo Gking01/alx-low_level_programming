@@ -1,10 +1,9 @@
 #include "main.h"
 
-/*
- * void print_alphabet_x10(void) - print alphabet x10 time 
- *
- * Return: nothing
- *
+/**
+ * print_alphabet_x10 - function that prints 10 times the alphabet,
+ * in lowercase
+ * Return: nothing.
  */
 
 void print_alphabet_x10(void)
@@ -21,6 +20,6 @@ void print_alphabet_x10(void)
 			l += 1;
 		}
 		_putchar(10);
-		n += l;
+		n += 1;
 	}
 }
