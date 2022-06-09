@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mul(int a; int b) - funtion the multiplies two intergers.
+ * mul(int a, int b) - funtion the multiplies two intergers.
  * @a: first input value to check
  * @b: second input value to check
  * Return: int.
