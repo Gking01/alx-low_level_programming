@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - function that prints every other character 
+ * puts2 - function that prints every other character
  * of a string, starting with the first character
  * @str: pointer to char
  * Return: nothing
@@ -17,7 +17,7 @@ void puts2(char *str)
 		{
 			_putchar(*(str + i));
 		}
-		i += 1; 
+		i += 1;
 	}
 	_putchar('\n');
 }
