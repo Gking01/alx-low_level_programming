@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _strcat - a fucntion that append the src string to the dest string,
