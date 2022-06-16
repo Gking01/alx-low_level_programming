@@ -5,6 +5,7 @@
  *
  * @dest: points to a destination char
  * @src: points to a source char
+ * @n: number of bytes
  * Return: char
  */
 
