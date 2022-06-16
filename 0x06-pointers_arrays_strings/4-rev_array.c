@@ -24,7 +24,7 @@ void reverse_array(int *a, int n)
 	{
 		aux = *(init + j);
 		*(init + j) = *(final + i);
-		*(finale + i) = aux;
+		*(final + i) = aux;
 		j++;
 		i--;
 	}
