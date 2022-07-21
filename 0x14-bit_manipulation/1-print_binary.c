@@ -32,7 +32,7 @@ void print_binary(unsigned long int n)
 	int flag = 0;
 
 	if (n == 0)
-		printf('0');
+		_putchar('0');
 	while (exp >= 0)
 	{
 		res_pow = _pow_recursion(2, exp);
