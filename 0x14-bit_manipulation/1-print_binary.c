@@ -3,47 +3,53 @@
 #include "main.h"
 
 /**
- * _pow_recursion - function that returns the value of x
- * raised to the power of y
- * @x: base number
- * @y: pow number
- * Return: int
- */
-
-int _pow_recursion(int x, int y)
+  * print_binary - Prints the binary representation of a number
+  * @n: The number to representing in binary
+  *
+  * Return: Nothing
+  */
+void print_binary(unsigned long int n)
 {
-	if (y < 0)
-		return (-1);
-	if (y == 0)
-		return (1);
-	return (x * _pow_recursion(x, y - 1));
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
+	_divide(n);
 }
 
 /**
- * print_binary - function that prints the binary representation of a number
- * @n: decimal number
- * Return: nothing
- */
-
-void print_binary(unsigned long int n)
+  * _divide - ...
+  * @n: ...
+  *
+  * Return: ...
+  */
+void _divide(unsigned long int n)
 {
-	unsigned int res_pow = 0;
-	int exp = 10;
-	int flag = 0;
+	if (n < 1)
+		return;
 
-	if (n == 0)
+	_divide(n >> 1);
+
+	if (n & 1)
+		_putchar('1');
+	else
 		_putchar('0');
-	while (exp >= 0)
-	{
-		res_pow = _pow_recursion(2, exp);
-		if (n >= res_pow)
-		{
-			_putchar('1');
-			n -= res_pow;
-			flag = 1;
-		}
-		else if (n < res_pow && flag == 1)
-			_putchar('0');
-		exp--;
-	}
 }
+
+int main(void)
+{
+    print_binary(0);
+    printf("\n");
+    print_binary(1);
+    printf("\n");
+    print_binary(98);
+    printf("\n");
+    print_binary(1024);
+    printf("\n");
+    print_binary((1 << 10) + 1);
+    printf("\n");
+    return (0);
+}
+
